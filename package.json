@@ -34,8 +34,10 @@
   "devDependencies": {
     "cypress": "^12.15.0",
     "cypress-localstorage-commands": "^2.2.3",
-    "faker": "^5.5.3",
-    "standardjs": "^1.0.0-alpha"
+    "eslint": "^8.43.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "^2.13.3",
+    "faker": "^5.5.3"
   },
   "bugs": {
     "url": "https://github.com/wlsf82/curso-cypress-avancado/issues"

@@ -5,7 +5,6 @@ describe('Hacker Stories', () => {
     cy.wait('@search')
     // cy.assertLoadingIsShownAndHidden()
     cy.contains('More').should('be.visible')
-    cy.pause()
   })
 
   it('shows the footer', () => {
@@ -130,7 +129,9 @@ describe('Hacker Stories', () => {
 
         Cypress._.times(6, () => {
           cy.get('#search')
+            .as('search')
             .clear()
+          cy.get('@search')
             .type(`${faker.random.word()}{enter}`)
         })
 
